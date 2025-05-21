@@ -22,8 +22,6 @@ This guide walks the player through [Bloomberg's Git adventure game](https://git
     - [Search for text in a file's history](#search-for-text-in-a-files-history)
     - [Define shortcuts](#define-shortcuts)
     - [Apply changes introduced by some existing commits](#apply-changes-introduced-by-some-existing-commits)
-  - [Things not covered that every beginner wants to know](#things-not-covered-that-every-beginner-wants-to-know)
-    - [Undo one or more commits](#undo-one-or-more-commits)
 
 ## Concepts
 
@@ -235,25 +233,5 @@ git cherry-pick <commit>
 ```
 
 Writing the revealed name on a **talisman** completes the adventure.
-
-([Back to top](#table-of-contents))
-
-## Things not covered that every beginner wants to know
-
-### Undo one or more commits
-
-```bash
-# Undo the last commit and staging.
-git reset HEAD~
-
-# Undo the last commit but keep changes in staging.
-git reset --soft HEAD~
-
-# Commit new changes using the old commit message.
-git commit -c ORIG_HEAD
-
-# Discard all changes after <commit>. DANGEROUS! USE WITH CARE!
-git reset --hard <commit>
-```
 
 ([Back to top](#table-of-contents))
